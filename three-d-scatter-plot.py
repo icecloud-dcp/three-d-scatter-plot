@@ -23,9 +23,9 @@ y_axis = 'Sales'
 
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df[x_axis], df[y_axis], color='blue', alpha=0.5)
-ax.xlabel(x_axis)
-ax.ylabel(y_axis)
-ax.title(f'{x_axis} vs {y_axis}')
+ax.set_xlabel(x_axis)
+ax.set_ylabel(y_axis)
+fig.title(f'{x_axis} vs {y_axis}')
 st.pyplot(fig)
 
 # Summary statistics
