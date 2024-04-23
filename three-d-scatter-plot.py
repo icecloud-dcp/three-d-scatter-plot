@@ -25,7 +25,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df[x_axis], df[y_axis], color='blue', alpha=0.5)
 ax.set_xlabel(x_axis)
 ax.set_ylabel(y_axis)
-fig.title(f'{x_axis} vs {y_axis}')
+ax.set_title(f'{x_axis} vs {y_axis}')
 st.pyplot(fig)
 
 # Summary statistics
