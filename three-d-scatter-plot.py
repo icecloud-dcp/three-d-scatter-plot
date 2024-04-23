@@ -35,3 +35,4 @@ st.write(df.describe())
 # Correlation matrix
 st.write("## Correlation Matrix")
 st.write(df.corr())
+
