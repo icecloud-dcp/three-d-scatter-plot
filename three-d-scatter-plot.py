@@ -22,10 +22,10 @@ x_axis = st.selectbox('Select X-axis:', ['TV', 'Radio', 'Newspaper'])
 y_axis = 'Sales'
 
 fig, ax = plt.subplots(figsize=(10, 6))
-plt.scatter(df[x_axis], df[y_axis], color='blue', alpha=0.5)
-plt.xlabel(x_axis)
-plt.ylabel(y_axis)
-plt.title(f'{x_axis} vs {y_axis}')
+ax.scatter(df[x_axis], df[y_axis], color='blue', alpha=0.5)
+ax.xlabel(x_axis)
+ax.ylabel(y_axis)
+ax.title(f'{x_axis} vs {y_axis}')
 st.pyplot(fig)
 
 # Summary statistics
